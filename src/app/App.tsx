@@ -158,17 +158,9 @@ export default function App() {
       {/* Landscapes Section */}
       <section id="landscapes" className="py-32 px-6 lg:px-12 bg-[#E6E0D8]">
         <div className="max-w-7xl mx-auto space-y-16">
-          {/* Switzerland */}
+          {/* Switzerland — image right on desktop */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="Alpine peaks and still water in muted light"
-                className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.52) brightness(0.84)' }}
-              />
-            </div>
-            <div className="space-y-6 order-1 md:order-2">
+            <div className="space-y-6">
               <h3
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
@@ -184,11 +176,27 @@ export default function App() {
                 </p>
               </div>
             </div>
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Alpine peaks and still water in muted light"
+                className="w-full h-full object-cover"
+                style={{ filter: 'saturate(0.52) brightness(0.84)' }}
+              />
+            </div>
           </div>
 
-          {/* Scottish Highlands */}
+          {/* Scottish Highlands — image left on desktop */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-6">
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
+              <img
+                src="https://images.unsplash.com/photo-1635738361668-556748ba02ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Scottish Highlands under cloudy sky"
+                className="w-full h-full object-cover"
+                style={{ filter: 'saturate(0.55) brightness(0.88)' }}
+              />
+            </div>
+            <div className="space-y-6 order-1 md:order-2">
               <h3
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
@@ -204,27 +212,11 @@ export default function App() {
                 </p>
               </div>
             </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1635738361668-556748ba02ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="Scottish Highlands under cloudy sky"
-                className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.55) brightness(0.88)' }}
-              />
-            </div>
           </div>
 
-          {/* Canadian Rockies */}
+          {/* Canadian Rockies — image right on desktop */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
-              <img
-                src="https://images.unsplash.com/photo-1686871793395-d5b06486c8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="Mountain path under overcast sky"
-                className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.6) brightness(0.85)' }}
-              />
-            </div>
-            <div className="space-y-6 order-1 md:order-2">
+            <div className="space-y-6">
               <h3
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
@@ -240,11 +232,27 @@ export default function App() {
                 </p>
               </div>
             </div>
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1686871793395-d5b06486c8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Mountain path under overcast sky"
+                className="w-full h-full object-cover"
+                style={{ filter: 'saturate(0.6) brightness(0.85)' }}
+              />
+            </div>
           </div>
 
-          {/* South African Wilderness */}
+          {/* South African Wilderness — image left on desktop */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-6">
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
+              <img
+                src="https://images.unsplash.com/photo-1595652973888-c5677816f6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="African savanna at dusk"
+                className="w-full h-full object-cover"
+                style={{ filter: 'saturate(0.5) brightness(0.82)' }}
+              />
+            </div>
+            <div className="space-y-6 order-1 md:order-2">
               <h3
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
@@ -259,14 +267,6 @@ export default function App() {
                   Walking between camps or lodges creates long stretches of grounded thought, heightened awareness, and rare distance from normal life.
                 </p>
               </div>
-            </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1595652973888-c5677816f6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="African savanna at dusk"
-                className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.5) brightness(0.82)' }}
-              />
             </div>
           </div>
 

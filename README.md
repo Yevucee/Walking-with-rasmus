@@ -27,10 +27,22 @@ npm run preview
 
 The production build uses a **relative asset base** (`./`) so it works under a project URL such as `https://yevucee.github.io/Walking-with-rasmus/` without extra path configuration.
 
-**Option A — GitHub Actions (recommended)**  
-Push to `main`. The workflow in `.github/workflows/deploy-pages.yml` builds the site and deploys to GitHub Pages. In the repository settings, enable **Pages** with **GitHub Actions** as the source.
+### One-time setup (required before Actions deploy works)
 
-**Option B — Manual**  
+If you skip this, the **deploy** job fails with **404** (`Failed to create deployment`).
+
+1. Open the repo on GitHub → **Settings** → **Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. Save if prompted. Wait a minute, then **Actions** → re-run the failed workflow (or push a commit).
+
+Also ensure **Settings** → **Actions** → **General** → “Actions permissions” allows workflows to run.
+
+### Option A — GitHub Actions (recommended)
+
+Push to `main`, or run **Deploy to GitHub Pages** manually via **Actions** → **workflow_dispatch**. The workflow builds into `dist/` and publishes with `actions/deploy-pages`.
+
+### Option B — Manual
+
 Run `npm run build`, then upload the contents of `dist/` to your Pages branch or hosting target.
 
 ## Credits

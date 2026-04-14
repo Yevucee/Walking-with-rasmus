@@ -162,10 +162,10 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
               <img
-                src="https://images.unsplash.com/photo-1551524164-6cf77f5a8cd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="Alpine ridge and path under soft cloud cover"
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Alpine peaks and still water in muted light"
                 className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.55) brightness(0.86)' }}
+                style={{ filter: 'saturate(0.52) brightness(0.84)' }}
               />
             </div>
             <div className="space-y-6 order-1 md:order-2">

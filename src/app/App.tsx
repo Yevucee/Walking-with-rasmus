@@ -158,14 +158,14 @@ export default function App() {
       {/* Landscapes Section */}
       <section id="landscapes" className="py-32 px-6 lg:px-12 bg-[#E6E0D8]">
         <div className="max-w-7xl mx-auto space-y-16">
-          {/* Canadian Rockies */}
+          {/* Switzerland */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
               <img
-                src="https://images.unsplash.com/photo-1686871793395-d5b06486c8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="Mountain path under overcast sky"
+                src="https://images.unsplash.com/photo-1551524164-6cf77f5a8cd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Alpine ridge and path under soft cloud cover"
                 className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.6) brightness(0.85)' }}
+                style={{ filter: 'saturate(0.55) brightness(0.86)' }}
               />
             </div>
             <div className="space-y-6 order-1 md:order-2">
@@ -173,14 +173,14 @@ export default function App() {
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
               >
-                Canadian Rockies
+                Switzerland
               </h3>
               <div className="space-y-4 text-[#3A3A36]/80 font-sans text-lg leading-relaxed">
                 <p>
-                  Long-form walking in open mountain space. Distance, altitude, and scale create unusual clarity.
+                  High alpine routes, quiet valleys, and strong natural elevation create space for distance, perspective, and calm thought.
                 </p>
                 <p>
-                  Best suited for full-day or multi-day formats where decisions benefit from perspective and uninterrupted time.
+                  The Swiss format is particularly suited to slow progression, reflective walking, and conversations that do not need urgency.
                 </p>
               </div>
             </div>
@@ -214,17 +214,37 @@ export default function App() {
             </div>
           </div>
 
-          {/* South African Wilderness */}
+          {/* Canadian Rockies */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
               <img
-                src="https://images.unsplash.com/photo-1595652973888-c5677816f6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-                alt="African savanna at dusk"
+                src="https://images.unsplash.com/photo-1686871793395-d5b06486c8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="Mountain path under overcast sky"
                 className="w-full h-full object-cover"
-                style={{ filter: 'saturate(0.5) brightness(0.82)' }}
+                style={{ filter: 'saturate(0.6) brightness(0.85)' }}
               />
             </div>
             <div className="space-y-6 order-1 md:order-2">
+              <h3
+                className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
+                style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
+              >
+                Canadian Rockies
+              </h3>
+              <div className="space-y-4 text-[#3A3A36]/80 font-sans text-lg leading-relaxed">
+                <p>
+                  Long-form walking in open mountain space. Distance, altitude, and scale create unusual clarity.
+                </p>
+                <p>
+                  Best suited for full-day or multi-day formats where decisions benefit from perspective and uninterrupted time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* South African Wilderness */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="space-y-6">
               <h3
                 className="font-serif text-3xl lg:text-4xl text-[#3A3A36]"
                 style={{ fontFamily: 'var(--font-serif)', fontWeight: 500 }}
@@ -239,6 +259,14 @@ export default function App() {
                   Walking between camps or lodges creates long stretches of grounded thought, heightened awareness, and rare distance from normal life.
                 </p>
               </div>
+            </div>
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1595652973888-c5677816f6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
+                alt="African savanna at dusk"
+                className="w-full h-full object-cover"
+                style={{ filter: 'saturate(0.5) brightness(0.82)' }}
+              />
             </div>
           </div>
 

@@ -1,6 +1,16 @@
-# Walking with Rasmus
+# Rasmus Nutzhorn
 
-Single-page marketing site for **High Ground** — private walking conversations in extraordinary landscapes. Built from a Figma export as a **Vite + React + TypeScript** app with **Tailwind CSS v4**.
+Personal brand site for **Rasmus Nutzhorn** — a calm, premium hub for how to engage Rasmus, with **Walking with Rasmus** as a flagship subpage. Built with **Vite + React + TypeScript** and **Tailwind CSS v4**.
+
+## Site structure
+
+| Route | Page |
+|---|---|
+| `/` | Homepage — introduction, ways to engage, credibility |
+| `/walking-with-rasmus` | Signature walking experience (original site content) |
+| `/about` | About Rasmus |
+| `/work-with-rasmus` | Strategic conversations, advisory, speaking |
+| `/contact` | Contact — rasmus@alicethetimebender.com |
 
 ## Run locally
 
@@ -17,7 +27,9 @@ Open the URL shown in the terminal (usually `http://localhost:5173`).
 npm run build
 ```
 
-Static files are written to `dist/`. Preview the production bundle:
+Static files are written to `dist/`. The build also copies `index.html` to `404.html` for GitHub Pages client-side routing.
+
+Preview the production bundle:
 
 ```bash
 npm run preview
@@ -25,25 +37,13 @@ npm run preview
 
 ## Deployment (GitHub Pages)
 
-The production build uses a **relative asset base** (`./`) so it works under a project URL such as `https://yevucee.github.io/Walking-with-rasmus/` without extra path configuration.
+Live site: **https://yevucee.github.io/Walking-with-rasmus/**
 
-### One-time setup (required before Actions deploy works)
+The production build uses a **relative asset base** (`./`) so assets work under the project URL.
 
-If you skip this, the **deploy** job fails with **404** (`Failed to create deployment`).
+**One-time setup:** Repo **Settings → Pages → Source: GitHub Actions**
 
-1. Open the repo on GitHub → **Settings** → **Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
-3. Save if prompted. Wait a minute, then **Actions** → re-run the failed workflow (or push a commit).
-
-Also ensure **Settings** → **Actions** → **General** → “Actions permissions” allows workflows to run.
-
-### Option A — GitHub Actions (recommended)
-
-Push to `main`, or run **Deploy to GitHub Pages** manually via **Actions** → **workflow_dispatch**. The workflow builds into `dist/` and publishes with `actions/deploy-pages`.
-
-### Option B — Manual
-
-Run `npm run build`, then upload the contents of `dist/` to your Pages branch or hosting target.
+Push to `main` to trigger `.github/workflows/deploy-pages.yml`.
 
 ## Credits
 

@@ -4,9 +4,8 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 export default defineConfig(({ command }) => ({
-  // Relative asset URLs in production so the built site works on GitHub Pages
-  // project URLs (https://<user>.github.io/<repo>/) without hard-coding the repo name.
-  base: command === 'build' ? './' : '/',
+  // GitHub Pages project site: assets and router must share this base path.
+  base: command === 'build' ? '/Walking-with-rasmus/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

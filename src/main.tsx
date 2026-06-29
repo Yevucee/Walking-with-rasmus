@@ -5,7 +5,7 @@ import './styles/index.css';
 
 function getBasename() {
   const base = import.meta.env.BASE_URL;
-  if (base === '/' || base === './') return undefined;
+  if (base === '/') return undefined;
   return base.replace(/\/$/, '');
 }
 

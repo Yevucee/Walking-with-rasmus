@@ -39,7 +39,7 @@ npm run preview
 
 Live site: **https://yevucee.github.io/Walking-with-rasmus/**
 
-The production build uses a **relative asset base** (`./`) so assets work under the project URL.
+Production builds use `base: /Walking-with-rasmus/` so assets and client-side routes resolve correctly on GitHub Pages.
 
 **One-time setup:** Repo **Settings → Pages → Source: GitHub Actions**
 

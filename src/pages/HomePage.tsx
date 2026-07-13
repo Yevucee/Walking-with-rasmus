@@ -116,8 +116,8 @@ export function HomePage() {
       <section className="relative min-h-[88vh] flex items-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1595842427698-2183e9f769d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
-            alt="Two people walking under overcast sky"
+            src={`${import.meta.env.BASE_URL}images/rasmus-hero.png`}
+            alt="Mountain fjord under overcast sky"
             className="w-full h-full object-cover"
             style={{ filter: 'saturate(0.7) brightness(0.72)' }}
           />

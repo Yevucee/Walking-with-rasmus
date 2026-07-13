@@ -270,15 +270,14 @@ export function HomePage() {
       </section>
 
       {/* Grounded in Reality */}
-      <section className="py-24 md:py-32 px-6 lg:px-14 bg-[#E0DCD5]">
-        <div className="max-w-[660px] mx-auto space-y-6">
-          <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight" style={serifHeading}>
-            Grounded in Reality
-          </h2>
-          <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
-            Ideas matter. Reality matters more. Some of my most valuable work has happened inside organisations, travelling supply chains, standing in factories and sitting quietly with families facing difficult decisions.
-          </p>
-        </div>
+      <section className="py-24 md:py-32 px-6 lg:px-14 bg-[#D8D1C7] text-center">
+        <p
+          className="font-serif text-3xl md:text-4xl text-[#3A3A36] leading-snug max-w-3xl mx-auto"
+          style={{ ...serifHeading, fontStyle: 'italic' }}
+        >
+          &ldquo;Ideas matter. Reality matters more. Some of my most valuable work has happened standing in
+          factories, travelling supply chains, and sitting quietly with families facing difficult decisions.&rdquo;
+        </p>
       </section>
 
       {/* Selected Experience */}

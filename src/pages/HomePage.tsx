@@ -26,7 +26,6 @@ const careerPillars = [
   {
     title: 'Future Thinking & Societal Change',
     text: 'Helping leaders understand deeper technological, social and geopolitical shifts.',
-    fullWidth: true,
   },
 ];
 
@@ -210,12 +209,9 @@ export function HomePage() {
               Throughout my career I've been drawn to moments when organisations, leaders and families need to adapt to a changing world.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-px bg-[#3A3A36]/10">
-            {careerPillars.map(({ title, text, fullWidth }) => (
-              <div
-                key={title}
-                className={`bg-[#E6E0D8] px-8 py-8 md:px-9 md:py-8 ${fullWidth ? 'md:col-span-2' : ''}`}
-              >
+          <div className="grid md:grid-cols-3 gap-px bg-[#3A3A36]/10">
+            {careerPillars.map(({ title, text }) => (
+              <div key={title} className="bg-[#E6E0D8] px-8 py-8 md:px-9 md:py-8">
                 <h3 className="font-serif text-xl text-[#3A3A36] mb-2.5" style={serifHeadingMedium}>
                   {title}
                 </h3>
@@ -359,21 +355,20 @@ export function HomePage() {
       </section>
 
       {/* Alice */}
-      <section className="py-20 md:py-24 px-6 lg:px-14 bg-[#F8F7F4] border-y border-[#D8D4CE]/50 text-center">
-        <h2 className="font-serif text-2xl lg:text-[32px] text-[#3A3A36] mb-4" style={serifHeading}>
-          Alice
-        </h2>
-        <p className="font-sans text-[17px] text-[#3A3A36]/75 leading-relaxed max-w-[620px] mx-auto mb-8">
-          Many of my advisory engagements are delivered through Alice the Time Bender, working quietly with family enterprises, founders and organisations on governance, stewardship, succession and organisational transformation.
-        </p>
-        <a
-          href="https://www.alicethetimebender.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-8 py-4 bg-transparent border border-[#4F5D4C] text-[#4F5D4C] font-sans text-[15px] tracking-wide hover:bg-[#4F5D4C]/5 transition-all duration-300"
-        >
-          Visit Alice →
-        </a>
+      <section className="py-32 px-6 lg:px-12 bg-[#3A3A36] text-center">
+        <div className="max-w-2xl mx-auto space-y-6">
+          <h2 className="font-serif text-3xl lg:text-4xl text-[#F8F7F4] leading-tight" style={serifHeading}>
+            Alice
+          </h2>
+          <p className="text-[#F8F7F4]/75 font-sans text-lg leading-relaxed">
+            Many of my advisory engagements are delivered through Alice the Time Bender, working quietly with
+            family enterprises, founders and organisations on governance, stewardship, succession and
+            organisational transformation.
+          </p>
+          <SecondaryButton to="https://www.alicethetimebender.com" variant="light" external className="mt-2">
+            Visit Alice →
+          </SecondaryButton>
+        </div>
       </section>
 
       {/* Begin a Conversation */}

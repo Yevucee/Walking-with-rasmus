@@ -18,7 +18,7 @@ export function WalkingWithRasmusPage() {
 
   return (
     <div>
-      <div className="px-6 lg:px-12 py-12 bg-[#F8F7F4] border-b border-[#D8D4CE]/40">
+      <div className="px-5 sm:px-6 lg:px-12 py-10 sm:py-12 bg-[#F8F7F4] border-b border-[#D8D4CE]/40">
         <div className="max-w-7xl mx-auto space-y-2">
           <h1
             className="font-serif text-3xl md:text-4xl text-[#3A3A36]"
@@ -34,15 +34,15 @@ export function WalkingWithRasmusPage() {
 
       <nav
         aria-label="Walking page sections"
-        className="sticky top-[72px] md:top-[88px] z-40 bg-[#F8F7F4]/95 backdrop-blur-md border-b border-[#D8D4CE]/40"
+        className="sticky top-[68px] sm:top-[72px] md:top-[88px] z-40 bg-[#F8F7F4]/95 backdrop-blur-md border-b border-[#D8D4CE]/40"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-16 py-4 flex flex-wrap gap-x-8 gap-y-2 font-sans text-[13px] tracking-[0.08em] uppercase">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 py-3 sm:py-4 flex gap-x-6 sm:gap-x-8 gap-y-2 overflow-x-auto font-sans text-[12px] sm:text-[13px] tracking-[0.08em] uppercase scrollbar-none">
           {subNavItems.map(({ id, label }) => (
             <button
               key={id}
               type="button"
               onClick={() => scrollToSection(id)}
-              className="text-[#5A5A56] hover:text-[#3A3A36] transition-colors duration-300 font-light"
+              className="text-[#5A5A56] hover:text-[#3A3A36] transition-colors duration-300 font-light shrink-0 min-h-[44px] flex items-center"
             >
               {label}
             </button>
@@ -61,29 +61,29 @@ export function WalkingWithRasmusPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
-          <div className="max-w-3xl space-y-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-12 w-full py-12 sm:py-0">
+          <div className="max-w-3xl space-y-6 sm:space-y-8">
             <h2
-              className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-white"
+              className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white"
               style={{ ...serifHeading, letterSpacing: '-0.02em' }}
             >
               Some clarity arrives before conversation does.
             </h2>
-            <p className="font-sans text-lg md:text-xl text-white/95 max-w-2xl leading-relaxed">
+            <p className="font-sans text-base sm:text-lg md:text-xl text-white/95 max-w-2xl leading-relaxed">
               Private walking time in extraordinary landscapes for reflection, perspective, and where needed, serious conversation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
                 type="button"
                 onClick={() => scrollToSection('contact')}
-                className="px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300 text-center"
               >
                 Begin a private conversation
               </button>
               <button
                 type="button"
                 onClick={() => scrollToSection('landscapes')}
-                className="px-8 py-4 bg-transparent border border-white text-white font-sans text-[15px] tracking-wide hover:bg-white/10 transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white text-white font-sans text-[15px] tracking-wide hover:bg-white/10 transition-all duration-300 text-center"
               >
                 Explore locations
               </button>
@@ -92,7 +92,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section id="concept" className="py-32 px-6 lg:px-12 bg-[#F2EFE9]">
+      <section id="concept" className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F2EFE9]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="space-y-8">
@@ -113,7 +113,7 @@ export function WalkingWithRasmusPage() {
                 <p>The format allows thought to settle before words are required.</p>
               </div>
             </div>
-            <div className="relative h-[500px] overflow-hidden">
+            <div className="relative h-[280px] sm:h-[400px] md:h-[500px] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1653522446325-715a30a8750e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="Foggy forest trail"
@@ -125,7 +125,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section id="landscapes" className="py-32 px-6 lg:px-12 bg-[#E6E0D8]">
+      <section id="landscapes" className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#E6E0D8]">
         <div className="max-w-7xl mx-auto space-y-16">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
@@ -141,7 +141,7 @@ export function WalkingWithRasmusPage() {
                 </p>
               </div>
             </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[280px] sm:h-[360px] md:h-[500px] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="Alpine peaks and still water in muted light"
@@ -152,7 +152,7 @@ export function WalkingWithRasmusPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
+            <div className="relative h-[280px] sm:h-[360px] md:h-[500px] overflow-hidden order-2 md:order-1">
               <img
                 src="https://images.unsplash.com/photo-1635738361668-556748ba02ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="Scottish Highlands under cloudy sky"
@@ -187,7 +187,7 @@ export function WalkingWithRasmusPage() {
                 </p>
               </div>
             </div>
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[280px] sm:h-[360px] md:h-[500px] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1686871793395-d5b06486c8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="Mountain path under overcast sky"
@@ -198,7 +198,7 @@ export function WalkingWithRasmusPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1">
+            <div className="relative h-[280px] sm:h-[360px] md:h-[500px] overflow-hidden order-2 md:order-1">
               <img
                 src="https://images.unsplash.com/photo-1595652973888-c5677816f6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="African savanna at dusk"
@@ -227,7 +227,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#F8F7F4]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F8F7F4]">
         <div className="max-w-5xl mx-auto">
           <h2
             className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight text-center mb-16"
@@ -252,7 +252,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#E0DCD5]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#E0DCD5]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -271,7 +271,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#F2EFE9]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F2EFE9]">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <h2 className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
             For people carrying decisions, transitions, or questions that do not fit ordinary rooms
@@ -290,7 +290,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#D8D1C7]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#D8D1C7]">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <p
             className="font-serif text-3xl md:text-4xl text-[#3A3A36] leading-tight"
@@ -307,10 +307,10 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section id="about" className="py-32 px-6 lg:px-12 bg-[#F8F7F4]">
+      <section id="about" className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F8F7F4]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div className="relative h-[600px] overflow-hidden">
+            <div className="relative h-[320px] sm:h-[480px] md:h-[600px] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1581614271049-8658315a15c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
                 alt="Rasmus in natural setting"
@@ -338,7 +338,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section id="formats" className="py-32 px-6 lg:px-12 bg-[#E0DCD5] relative">
+      <section id="formats" className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#E0DCD5] relative">
         <div
           className="absolute inset-0 opacity-[0.015]"
           style={{
@@ -379,7 +379,7 @@ export function WalkingWithRasmusPage() {
             ].map(({ title, paragraphs }) => (
               <div
                 key={title}
-                className="bg-white/55 backdrop-blur-sm p-10 space-y-5 border border-[#C9BCB0]/50"
+                className="bg-white/55 backdrop-blur-sm p-6 sm:p-8 md:p-10 space-y-5 border border-[#C9BCB0]/50"
               >
                 <h3 className="font-serif text-2xl text-[#3A3A36]" style={serifHeadingMedium}>
                   {title}
@@ -398,7 +398,7 @@ export function WalkingWithRasmusPage() {
         </div>
       </section>
 
-      <section id="contact" className="py-32 px-6 lg:px-12 bg-[#F2EFE9]">
+      <section id="contact" className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F2EFE9]">
         <div className="max-w-2xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
@@ -411,7 +411,7 @@ export function WalkingWithRasmusPage() {
           <div className="text-center">
             <a
               href="mailto:rasmus@alicethetimebender.com"
-              className="inline-block px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300"
+              className="inline-block w-full sm:w-auto px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300 text-center"
             >
               Contact Rasmus
             </a>

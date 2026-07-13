@@ -8,7 +8,7 @@ type PrimaryButtonProps = {
 };
 
 export function PrimaryButton({ to, children, className = '', external }: PrimaryButtonProps) {
-  const classes = `inline-block px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300 text-center ${className}`;
+  const classes = `inline-block w-full sm:w-auto px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300 text-center ${className}`;
 
   if (external) {
     const isMailto = to.startsWith('mailto:');

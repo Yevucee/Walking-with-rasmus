@@ -10,7 +10,7 @@ const footerLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="py-12 px-6 lg:px-12 bg-[#E6E0D8] border-t border-[#D8D4CE]">
+    <footer className="py-10 sm:py-12 px-5 sm:px-6 lg:px-12 bg-[#E6E0D8] border-t border-[#D8D4CE]">
       <div className="max-w-7xl mx-auto space-y-8">
         <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3 font-sans text-[13px] tracking-[0.06em] uppercase">
           {footerLinks.map(({ to, label }) => (

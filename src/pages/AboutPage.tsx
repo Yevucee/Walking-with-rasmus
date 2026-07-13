@@ -8,9 +8,9 @@ export function AboutPage() {
 
   return (
     <div>
-      <section className="py-24 px-6 lg:px-14 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-14 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
         <div className="max-w-[660px] mx-auto space-y-5">
-          <h1 className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
             About Rasmus
           </h1>
           <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
@@ -19,9 +19,9 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#F8F7F4]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F8F7F4]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
-          <div className="relative h-[480px] overflow-hidden">
+          <div className="relative h-[320px] sm:h-[420px] md:h-[480px] overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1581614271049-8658315a15c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
               alt="Rasmus in natural setting"
@@ -45,7 +45,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#F2EFE9]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F2EFE9]">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="font-serif text-3xl lg:text-4xl text-[#3A3A36] leading-tight" style={serifHeading}>
             How he works
@@ -64,7 +64,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#E0DCD5]">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#E0DCD5]">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="font-serif text-3xl lg:text-4xl text-[#3A3A36] leading-tight" style={serifHeading}>
             Why this way of working

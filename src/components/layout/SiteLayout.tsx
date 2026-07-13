@@ -4,9 +4,9 @@ import { SiteHeader } from './SiteHeader';
 
 export function SiteLayout() {
   return (
-    <div className="min-h-screen bg-[#F8F7F4]">
+    <div className="min-h-screen bg-[#F8F7F4] overflow-x-hidden">
       <SiteHeader />
-      <main className="pt-[72px] md:pt-[88px]">
+      <main className="pt-[68px] sm:pt-[72px] md:pt-[88px]">
         <Outlet />
       </main>
       <SiteFooter />

@@ -20,7 +20,7 @@ export function SecondaryButton({
       ? 'bg-transparent border border-white text-white hover:bg-white/10'
       : 'bg-transparent border border-[#4F5D4C] text-[#4F5D4C] hover:bg-[#4F5D4C]/5';
 
-  const classes = `inline-block px-8 py-4 font-sans text-[15px] tracking-wide transition-all duration-300 text-center ${variantClasses} ${className}`;
+  const classes = `inline-block w-full sm:w-auto px-8 py-4 font-sans text-[15px] tracking-wide transition-all duration-300 text-center ${variantClasses} ${className}`;
 
   if (external) {
     const isMailto = to.startsWith('mailto:');

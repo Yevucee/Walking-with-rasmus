@@ -149,6 +149,12 @@
 
   html {
     font-size: var(--font-size);
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   h1 {
@@ -204,5 +210,22 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 639px) {
+  .rn-marquee-track {
+    gap: 3rem;
+    animation-duration: 24s;
+  }
+
+  .rn-marquee-item {
+    font-size: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rn-marquee-track {
+    animation: none;
   }
 }

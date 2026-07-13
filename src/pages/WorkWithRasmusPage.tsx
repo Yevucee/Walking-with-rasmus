@@ -39,9 +39,9 @@ export function WorkWithRasmusPage() {
 
   return (
     <div>
-      <section className="py-24 px-6 lg:px-12 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
+      <section className="py-16 sm:py-20 md:py-24 px-5 sm:px-6 lg:px-12 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h1 className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
             Work with Rasmus
           </h1>
           <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
@@ -50,8 +50,8 @@ export function WorkWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-32 px-6 lg:px-12 bg-[#F8F7F4]">
-        <div className="max-w-7xl mx-auto space-y-20">
+      <section className="py-16 sm:py-20 md:py-32 px-5 sm:px-6 lg:px-12 bg-[#F8F7F4]">
+        <div className="max-w-7xl mx-auto space-y-12 md:space-y-20">
           {workSections.map(({ title, paragraphs }) => (
             <div
               key={title}
@@ -73,7 +73,7 @@ export function WorkWithRasmusPage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 lg:px-12 bg-[#E6E0D8]">
+      <section className="py-16 sm:py-20 md:py-24 px-5 sm:px-6 lg:px-12 bg-[#E6E0D8]">
         <div className="max-w-2xl mx-auto text-center space-y-8">
           <p className="text-[#3A3A36]/75 font-sans text-lg leading-relaxed">
             For the signature walking experience, see{' '}

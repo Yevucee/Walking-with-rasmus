@@ -29,10 +29,10 @@ export function SiteHeader() {
           : 'bg-[#FAFAF8]/60 backdrop-blur-md'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-5 md:py-7 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 py-4 md:py-7 flex justify-between items-center gap-4">
         <Link
           to="/"
-          className="font-serif text-[22px] md:text-[26px] text-[#3A3A36]"
+          className="font-serif text-[19px] sm:text-[22px] md:text-[26px] text-[#3A3A36] leading-tight min-w-0"
           style={{ ...serifHeading, letterSpacing: '0.01em' }}
           onClick={() => setMobileOpen(false)}
         >
@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="lg:hidden font-sans text-[13px] tracking-[0.08em] uppercase text-[#5A5A56] hover:text-[#3A3A36] transition-colors"
+          className="lg:hidden shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center font-sans text-[13px] tracking-[0.08em] uppercase text-[#5A5A56] hover:text-[#3A3A36] transition-colors -mr-2"
           aria-expanded={mobileOpen}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           onClick={() => setMobileOpen((open) => !open)}
@@ -68,13 +68,15 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <nav className="lg:hidden border-t border-[#D8D4CE]/60 bg-[#F8F7F4] px-6 py-6 font-sans flex flex-col gap-5">
+        <nav className="lg:hidden border-t border-[#D8D4CE]/60 bg-[#F8F7F4] px-5 sm:px-6 py-4 font-sans flex flex-col gap-1">
           {navItems.map(({ to, label, end }) => (
             <NavLink
               key={to}
               to={to}
               end={end}
-              className={navLinkClass}
+              className={({ isActive }) =>
+                `${navLinkClass({ isActive })} block py-3 min-h-[44px] flex items-center`
+              }
               onClick={() => setMobileOpen(false)}
             >
               {label}

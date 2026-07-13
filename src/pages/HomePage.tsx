@@ -51,6 +51,28 @@ const engageCards = [
   },
 ];
 
+const featuredClients = [
+  'Liechtenstein Royal Family',
+  'Danish Royal Family',
+  'Standard Bank',
+  'Blue Water Shipping',
+];
+
+const experienceCategories = [
+  {
+    title: 'Family & Legacy',
+    items: ['Ricola', 'Swarovski', 'Kennedy Family', 'Weisse Arena Group', 'Claus Sørensen Foundation'],
+  },
+  {
+    title: 'Global Companies',
+    items: ['Unilever', 'Toyota', 'Bayer', 'Novartis', 'Allianz', 'Google'],
+  },
+  {
+    title: 'Institutions & Advisory',
+    items: ['UBS', 'ICRC', 'United Nations', 'McKinsey', 'Boston Consulting Group', 'Stockholm Resilience Centre'],
+  },
+];
+
 function EngageCard({
   title,
   text,
@@ -260,16 +282,56 @@ export function HomePage() {
       </section>
 
       {/* Selected Experience */}
-      <section className="py-24 md:py-32 px-6 lg:px-14 bg-[#F8F7F4] text-center">
-        <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight mb-6" style={serifHeading}>
-          Selected Experience
-        </h2>
-        <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed max-w-[700px] mx-auto mb-4">
-          Over more than two decades I've worked alongside family enterprises, global organisations, entrepreneurs and institutions where trust, discretion and long-term relationships matter.
-        </p>
-        <p className="font-sans text-[15px] text-[#3A3A36]/55 italic">
-          Further detail is shared privately where appropriate.
-        </p>
+      <section className="py-24 md:py-32 px-6 lg:px-14 bg-[#F8F7F4] overflow-hidden">
+        <div className="max-w-7xl mx-auto space-y-12 lg:space-y-16">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight" style={serifHeading}>
+              Selected Experience
+            </h2>
+            <p className="text-[#3A3A36]/60 font-sans text-base italic">
+              Names are shared here to help the introduction travel with credibility. We still lead with discretion.
+            </p>
+          </div>
+
+          <div
+            className="border-y border-[#3A3A36]/15 py-7"
+            style={{ maskImage: 'linear-gradient(to right, transparent, black 8%, black 92%, transparent)' }}
+          >
+            <div
+              className="flex gap-20 w-max"
+              style={{ animation: 'rn-marquee 32s linear infinite' }}
+            >
+              {[...featuredClients, ...featuredClients].map((name, i) => (
+                <span
+                  key={`${name}-${i}`}
+                  className="font-serif text-2xl text-[#3A3A36]/70 whitespace-nowrap"
+                  style={serifHeading}
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10 lg:gap-14 text-left">
+            {experienceCategories.map(({ title, items }) => (
+              <div key={title}>
+                <h3 className="font-sans text-[13px] tracking-[0.1em] uppercase text-[#3A3A36]/60 font-semibold mb-5">
+                  {title}
+                </h3>
+                <ul className="space-y-0 font-sans text-[17px] leading-[2] text-[#3A3A36]/85 list-none p-0 m-0">
+                  {items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-[#3A3A36]/60 font-sans text-sm italic">
+            A track record built across global companies, leading financial institutions, family-owned enterprises and royal families.
+          </p>
+        </div>
       </section>
 
       {/* Speaking */}

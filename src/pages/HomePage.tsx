@@ -204,7 +204,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto space-y-12 lg:space-y-16">
           <div className="max-w-[900px] space-y-5">
             <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight" style={serifHeading}>
-              A Career Spent Preparing Organisations for Change
+              A Career Spent Preparing Systems for Change
             </h2>
             <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
               Throughout my career I've been drawn to moments when organisations, leaders and families need to adapt to a changing world.

@@ -335,16 +335,26 @@ export function HomePage() {
 
       {/* Speaking */}
       <section className="py-24 md:py-32 px-6 lg:px-14 bg-[#F2EFE9]">
-        <div className="max-w-[660px] mx-auto space-y-8">
-          <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight" style={serifHeading}>
-            Speaking
-          </h2>
-          <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
-            Every audience already has enough information. What they often need is perspective. I speak internationally about technology, leadership, sustainability, organisational transformation and the societal shifts changing business and society.
-          </p>
-          <SecondaryButton to={EMAIL} external>
-            Invite Rasmus to Speak
-          </SecondaryButton>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="space-y-8">
+            <h2 className="font-serif text-3xl lg:text-[40px] text-[#3A3A36] leading-tight" style={serifHeading}>
+              Speaking
+            </h2>
+            <p className="font-sans text-lg text-[#3A3A36]/80 leading-relaxed">
+              Every audience already has enough information. What they often need is perspective. I speak internationally about technology, leadership, sustainability, organisational transformation and the societal shifts changing business and society.
+            </p>
+            <SecondaryButton to={EMAIL} external>
+              Invite Rasmus to Speak
+            </SecondaryButton>
+          </div>
+          <div className="relative h-[400px] md:h-[480px] overflow-hidden">
+            <img
+              src={`${import.meta.env.BASE_URL}images/speaking-tedx.jpg`}
+              alt="Rasmus speaking on stage at TEDx"
+              className="w-full h-full object-cover"
+              style={{ objectPosition: 'center 20%', filter: 'saturate(0.9) brightness(1.02)' }}
+            />
+          </div>
         </div>
       </section>
 

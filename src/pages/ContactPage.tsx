@@ -14,8 +14,8 @@ export function ContactPage() {
 
   return (
     <div>
-      <section className="py-24 px-6 lg:px-12 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
-        <div className="max-w-3xl mx-auto space-y-6">
+      <section className="py-24 px-6 lg:px-14 bg-[#F2EFE9] border-b border-[#D8D4CE]/40">
+        <div className="max-w-[660px] mx-auto space-y-5">
           <h1 className="font-serif text-4xl lg:text-5xl text-[#3A3A36] leading-tight" style={serifHeading}>
             Get in touch
           </h1>

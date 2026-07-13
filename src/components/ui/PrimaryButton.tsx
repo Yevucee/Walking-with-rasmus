@@ -11,8 +11,13 @@ export function PrimaryButton({ to, children, className = '', external }: Primar
   const classes = `inline-block px-8 py-4 bg-[#4F5D4C] text-white font-sans text-[15px] tracking-wide hover:bg-[#3E4A3C] transition-all duration-300 text-center ${className}`;
 
   if (external) {
+    const isMailto = to.startsWith('mailto:');
     return (
-      <a href={to} className={classes} target="_blank" rel="noopener noreferrer">
+      <a
+        href={to}
+        className={classes}
+        {...(!isMailto ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
         {children}
       </a>
     );

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { SecondaryButton } from '@/components/ui/SecondaryButton';
 import { usePageTitle } from '@/hooks/usePageTitle';
@@ -224,8 +223,19 @@ export function WorkWithRasmusPage() {
         </div>
       </section>
 
+      {/* Stream image break */}
+      <section className="relative min-h-[50svh] md:min-h-[65vh] overflow-hidden" aria-hidden="true">
+        <img
+          src={`${import.meta.env.BASE_URL}images/rasmus-stream.png`}
+          alt=""
+          className="w-full h-full object-cover"
+          style={{ filter: 'saturate(0.75) brightness(0.88)' }}
+          loading="lazy"
+        />
+      </section>
+
       {/* The First Conversation */}
-      <section className="py-16 sm:py-20 md:py-28 px-5 sm:px-6 lg:px-14 bg-[#F2EFE9] text-center">
+      <section className="py-16 sm:py-20 md:py-28 px-5 sm:px-6 lg:px-14 bg-[#E6E0D8] text-center">
         <div className="max-w-2xl mx-auto space-y-6 sm:space-y-8">
           <h2
             className="font-serif text-2xl sm:text-3xl lg:text-[40px] text-[#3A3A36] leading-tight"
@@ -241,13 +251,6 @@ export function WorkWithRasmusPage() {
           <PrimaryButton to={EMAIL} external>
             Begin a Conversation
           </PrimaryButton>
-          <p className="font-sans text-sm text-[#3A3A36]/60">
-            Or visit the{' '}
-            <Link to="/contact" className="text-[#4F5D4C] hover:text-[#3E4A3C] transition-colors">
-              contact page
-            </Link>
-            .
-          </p>
         </div>
       </section>
     </div>

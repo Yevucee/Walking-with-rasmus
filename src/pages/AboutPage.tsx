@@ -30,13 +30,12 @@ export function AboutPage() {
           </h1>
           <div className="space-y-5 font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed">
             <p>
-              I did not set out to build a career around advice. I set out to build things — companies,
-              teams, ideas — and to understand how organisations respond when the world around them shifts.
+              I did not set out to build a career around advice. I set out to build companies, teams, and ideas,
+              and to understand how organisations respond when the world around them shifts.
             </p>
             <p>
-              Over time, the work changed shape. What remained constant was a fascination with change itself:
-              how leaders see it, how families carry it, and how institutions either adapt or quietly fall out
-              of step with reality.
+              Over time, the work changed shape. What stayed with me was change itself: how leaders see it, how
+              families carry it, and how institutions adapt or gradually fall out of step with reality.
             </p>
           </div>
         </div>
@@ -53,13 +52,13 @@ export function AboutPage() {
               It began with technology
             </h2>
             <p>
-              My early years were spent inside technology businesses — building, leading, and learning what
-              it takes to move fast without losing coherence. Innovation labs, new ventures, and the practical
-              discipline of making ideas real.
+              My early years were spent inside technology businesses, building, leading, and learning what it
+              takes to move fast without losing coherence. Innovation labs, new ventures, and the practical work
+              of making ideas real.
             </p>
             <p>
-              Technology was never an end in itself. It was a lens — a way of seeing how quickly assumptions
-              become obsolete, and how rarely organisations notice until something breaks.
+              Technology was never an end in itself. It was a way of seeing how quickly assumptions become
+              obsolete, and how rarely organisations notice until something breaks.
             </p>
           </div>
           <div className="relative h-[280px] sm:h-[360px] md:h-[480px] overflow-hidden">
@@ -86,7 +85,7 @@ export function AboutPage() {
           <div className="space-y-5 font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed text-left sm:text-center">
             <p>
               The more I worked across sectors, the clearer it became that the hardest problems were rarely
-              technical. They were human — leadership under pressure, culture resisting what strategy demands,
+              technical. They were human: leadership under pressure, culture resisting what strategy demands,
               families trying to prepare for a future they cannot fully control.
             </p>
             <p>
@@ -127,14 +126,14 @@ export function AboutPage() {
               Building organisations that last
             </h2>
             <p>
-              Sustainability, compliance, governance, stewardship — these words can sound administrative until
-              you sit with a family enterprise facing succession, or an institution whose legitimacy depends on
+              Sustainability, compliance, governance, stewardship. These words can sound administrative until you
+              sit with a family enterprise facing succession, or an institution whose legitimacy depends on
               getting the next decade right.
             </p>
             <p>
-              Much of my work in these years was about embedding long-term thinking into structures that
-              prefer short-term certainty: reporting systems, board conversations, capability, and the quiet
-              work of preparing the next generation to carry responsibility well.
+              Much of my work in these years was about putting long-term thinking into structures that prefer
+              short-term certainty: reporting systems, board conversations, capability, and the quiet work of
+              preparing the next generation to carry responsibility well.
             </p>
           </div>
         </div>
@@ -161,8 +160,8 @@ export function AboutPage() {
             </h2>
             <p className="font-sans text-base sm:text-lg text-white/90 leading-relaxed">
               At a certain point I noticed that the conversations that mattered most rarely happened in the
-              settings designed for them. They happened while moving — when the body was engaged, the agenda
-              had fallen away, and there was finally room to think.
+              settings designed for them. They happened while moving, when the body was engaged, the agenda had
+              dropped away, and there was space to think.
             </p>
             <p className="font-sans text-base sm:text-lg text-white/85 leading-relaxed">
               That observation became{' '}
@@ -172,8 +171,7 @@ export function AboutPage() {
               >
                 Walking with Rasmus
               </Link>
-              — not a gimmick, but a deliberate format for reflection, perspective, and the kind of dialogue
-              that does not fit inside a meeting room.
+              , a way to make room for reflection and dialogue that does not fit inside a meeting room.
             </p>
           </div>
         </div>
@@ -202,7 +200,7 @@ export function AboutPage() {
             </h2>
             <p className="font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed text-left sm:text-center">
               There is no single job title that captures this path. What connects the work is a recurring
-              question: how do people and institutions prepare for what comes next — and who helps them see
+              question: how do people and institutions prepare for what comes next, and who helps them see
               clearly enough to act with judgement?
             </p>
           </div>
@@ -244,14 +242,13 @@ export function AboutPage() {
               Looking ahead
             </h2>
             <p>
-              The contexts change — technology, geopolitics, climate, generational transition — but the need
-              for clear thinking does not. I continue to work with leaders, families, and institutions where
-              the stakes are real and the answers are rarely obvious.
+              The contexts change. Technology, geopolitics, climate, generational transition. The need for
+              clear thinking does not. I continue to work with leaders, families, and institutions where the
+              stakes are real and the answers are rarely obvious.
             </p>
             <p>
-              Some of that work happens through advisory relationships, speaking, and structured engagements
-              via Alice. Some of it happens on a path, in silence, or over a table where there is time to
-              listen properly.
+              Some of that work happens through advisory relationships, speaking, and engagements via Alice.
+              Some of it happens on a path, in silence, or over a table where there is time to listen properly.
             </p>
           </div>
           <p

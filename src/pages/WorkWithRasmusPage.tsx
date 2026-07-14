@@ -25,7 +25,7 @@ export function WorkWithRasmusPage() {
               style={{ ...serifHeading, fontStyle: 'italic' }}
             >
               Most enquiries begin by asking what I offer. The more useful question is whether we are facing
-              something that deserves real attention.
+              something that needs real attention.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-20 max-w-5xl">
@@ -67,7 +67,7 @@ export function WorkWithRasmusPage() {
             </p>
             <p>
               There is no standard entry point and no single path. What matters is whether the situation calls for
-              perspective, judgement, and time to think — and whether we are the right people to do that work
+              perspective, judgement, and time to think, and whether we are the right people to do that work
               together.
             </p>
           </div>
@@ -97,13 +97,13 @@ export function WorkWithRasmusPage() {
             </h2>
             <div className="space-y-5 font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed">
               <p>
-                For deeper strategic, governance, and organisational work, many of my advisory engagements are
-                delivered through Alice the Time Bender — working quietly with family enterprises, founders, and
-                institutions on stewardship, succession, and long-horizon transformation.
+                For strategic, governance, and organisational work, many of my advisory engagements are
+                delivered through Alice the Time Bender, working with family enterprises, founders, and
+                institutions on stewardship, succession, and long-term transformation.
               </p>
               <p>
-                This work is unhurried, confidential, and shaped around the person and the situation — not a fixed
-                programme or a catalogue of deliverables.
+                This work is confidential and shaped around the person and the situation, not a fixed programme
+                or a list of deliverables.
               </p>
             </div>
             <SecondaryButton to="https://www.alicethetimebender.com" external>
@@ -143,13 +143,12 @@ export function WorkWithRasmusPage() {
             </h2>
             <div className="space-y-5 font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed">
               <p>
-                Every audience already has enough information. What they often need is perspective — on technology,
-                leadership, sustainability, organisational change, and the deeper shifts reshaping business and
-                society.
+                Every audience already has enough information. What they often need is perspective on technology,
+                leadership, sustainability, organisational change, and the shifts reshaping business and society.
               </p>
               <p>
-                Talks and hosted conversations are chosen carefully. The aim is not performance, but room for
-                thought.
+                Talks and hosted conversations are chosen carefully. The aim is not performance. It is to leave
+                room for thought.
               </p>
             </div>
             <SecondaryButton to={EMAIL} external>
@@ -180,8 +179,8 @@ export function WorkWithRasmusPage() {
             </h2>
             <p className="font-sans text-base sm:text-lg text-white/90 leading-relaxed">
               Not every important conversation belongs inside a meeting room. Walking with Rasmus is an invitation
-              to leave routine behind and spend time together in nature — where movement, silence, and landscape
-              create the conditions for clearer thought.
+              to leave routine behind and spend time together in nature, where movement and silence make room
+              for clearer thought.
             </p>
             <SecondaryButton to="/walking-with-rasmus" variant="light">
               Enter Walking with Rasmus
@@ -211,7 +210,7 @@ export function WorkWithRasmusPage() {
           </h2>
           <div className="space-y-5 font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed text-left sm:text-center">
             <p>
-              Some engagements are a single conversation at a decisive moment. Others unfold over years — as
+              Some engagements are a single conversation at a decisive moment. Others unfold over years, as
               circumstances change, responsibility deepens, and trust is tested in quieter ways.
             </p>
             <p>

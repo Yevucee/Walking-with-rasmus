@@ -25,7 +25,7 @@ const careerPillars = [
   },
   {
     title: 'Future Thinking & Societal Change',
-    text: 'Helping leaders understand deeper technological, social and geopolitical shifts.',
+    text: 'Helping leaders understand technological, social and geopolitical shifts.',
   },
 ];
 
@@ -159,10 +159,12 @@ export function HomePage() {
             Some Decisions Need More Than Advice
           </h2>
           <p className="font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed">
-            Some problems cannot be solved by another presentation or framework. They need perspective: the kind that comes from experience, honest conversation, and paying attention to what is really happening.
+            Some problems cannot be solved by another presentation or framework. They need perspective that comes
+            from experience, honest conversation, and paying attention to what is really happening.
           </p>
           <p className="font-sans text-base sm:text-lg text-[#3A3A36]/80 leading-relaxed">
-            I work with people carrying responsibility. Together we slow things down enough to understand what matters, what is changing, and what deserves attention before the next decision is made.
+            I work with people carrying responsibility. Together we slow things down enough to understand what
+            matters, what is changing, and what needs attention before the next decision is made.
           </p>
         </div>
       </section>
@@ -364,7 +366,7 @@ export function HomePage() {
             Alice
           </h2>
           <p className="text-[#F8F7F4]/75 font-sans text-base sm:text-lg leading-relaxed">
-            Many of my advisory engagements are delivered through Alice the Time Bender, working quietly with
+            Many of my advisory engagements are delivered through Alice the Time Bender, working with
             family enterprises, founders and organisations on governance, stewardship, succession and
             organisational transformation.
           </p>

@@ -6,7 +6,7 @@ import { serifHeading } from '@/lib/styles';
 const navItems = [
   { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About', end: false },
-  { to: '/work-with-rasmus', label: 'Work with Rasmus', end: false },
+  { to: '/work-with-rasmus', label: 'Working Together', end: false },
   { to: '/walking-with-rasmus', label: 'Walking with Rasmus', end: false },
   { to: '/contact', label: 'Contact', end: false },
 ];

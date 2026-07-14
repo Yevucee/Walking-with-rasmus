@@ -224,7 +224,7 @@ export function WorkWithRasmusPage() {
       </section>
 
       {/* Stream image break */}
-      <section className="relative min-h-[50svh] md:min-h-[65vh] overflow-hidden" aria-hidden="true">
+      <section className="relative h-[200px] sm:h-[260px] md:h-[320px] overflow-hidden" aria-hidden="true">
         <img
           src={`${import.meta.env.BASE_URL}images/rasmus-stream.png`}
           alt=""

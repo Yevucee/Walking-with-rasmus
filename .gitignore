@@ -21,3 +21,8 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/

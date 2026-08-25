@@ -1,6 +1,7 @@
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { SecondaryButton } from '@/components/ui/SecondaryButton';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { assetUrl } from '@/lib/siteBase';
 import { serifHeading } from '@/lib/styles';
 
 const EMAIL = 'mailto:rasmus@alicethetimebender.com';
@@ -127,7 +128,7 @@ export function WorkWithRasmusPage() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
           <div className="relative h-[280px] sm:h-[360px] md:h-[480px] overflow-hidden order-2 md:order-1">
             <img
-              src={`${import.meta.env.BASE_URL}images/speaking-tedx.jpg`}
+              src={assetUrl('images/speaking-tedx.jpg')}
               alt="Rasmus speaking on stage at TEDx"
               className="w-full h-full object-cover"
               style={{ objectPosition: 'center 20%', filter: 'saturate(0.9) brightness(1.02)' }}
@@ -225,7 +226,7 @@ export function WorkWithRasmusPage() {
       {/* Stream image break */}
       <section className="relative h-[200px] sm:h-[260px] md:h-[320px] overflow-hidden" aria-hidden="true">
         <img
-          src={`${import.meta.env.BASE_URL}images/rasmus-stream.png`}
+          src={assetUrl('images/rasmus-stream.png')}
           alt=""
           className="w-full h-full object-cover"
           style={{ filter: 'saturate(0.75) brightness(0.88)' }}

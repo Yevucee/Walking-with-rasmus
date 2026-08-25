@@ -3,8 +3,16 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-export default defineConfig(({ command }) => {
-  const base = command === 'build' ? '/Walking-with-rasmus/' : '/'
+function resolveBase(command: string, isPreview: boolean | undefined) {
+  const fromEnv = process.env.SITE_BASE_PATH
+  const raw =
+    fromEnv ?? (command === 'build' || isPreview ? '/Walking-with-rasmus' : '')
+  if (!raw || raw === '/') return '/'
+  return `${raw.replace(/\/+$/, '')}/`
+}
+
+export default defineConfig(({ command, isPreview }) => {
+  const base = resolveBase(command, isPreview)
 
   return {
   // GitHub Pages project site: assets and router must share this base path.

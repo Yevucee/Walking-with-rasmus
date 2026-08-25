@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { assetUrl } from '@/lib/siteBase';
 import { serifHeading } from '@/lib/styles';
 
 const EMAIL = 'mailto:rasmus@alicethetimebender.com';
@@ -143,7 +144,7 @@ export function AboutPage() {
       <section className="relative min-h-[72svh] md:min-h-[82vh] flex items-end">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={`${import.meta.env.BASE_URL}images/rasmus-hero.png`}
+            src={assetUrl('images/rasmus-hero.png')}
             alt="Mountain landscape under overcast sky"
             className="w-full h-full object-cover object-[center_35%] sm:object-center"
             style={{ filter: 'saturate(0.65) brightness(0.7)' }}

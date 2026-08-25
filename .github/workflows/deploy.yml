@@ -6,6 +6,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -27,12 +28,19 @@ jobs:
           node-version: '22'
           cache: 'npm'
       - run: npm ci
+      - run: npx playwright install chromium --with-deps
       - run: npm run build
+        env:
+          CANONICAL_BASE: https://yevucee.github.io/Walking-with-rasmus
+          SITE_BASE_PATH: /Walking-with-rasmus
+      - run: npm run audit:seo
+      - run: npm run audit:preview-base
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

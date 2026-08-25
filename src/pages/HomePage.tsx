@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { SecondaryButton } from '@/components/ui/SecondaryButton';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import { assetUrl } from '@/lib/siteBase';
 import { serifHeading, serifHeadingMedium } from '@/lib/styles';
 
 const EMAIL = 'mailto:rasmus@alicethetimebender.com';
@@ -116,7 +117,7 @@ export function HomePage() {
       <section className="relative min-h-[75svh] md:min-h-[88vh] flex items-end md:items-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={`${import.meta.env.BASE_URL}images/rasmus-hero.png`}
+            src={assetUrl('images/rasmus-hero.png')}
             alt="Mountain fjord under overcast sky"
             className="w-full h-full object-cover object-[center_35%] sm:object-center"
             style={{ filter: 'saturate(0.7) brightness(0.72)' }}
@@ -349,7 +350,7 @@ export function HomePage() {
           </div>
           <div className="relative h-[280px] sm:h-[360px] md:h-[480px] overflow-hidden">
             <img
-              src={`${import.meta.env.BASE_URL}images/speaking-tedx.jpg`}
+              src={assetUrl('images/speaking-tedx.jpg')}
               alt="Rasmus speaking on stage at TEDx"
               className="w-full h-full object-cover"
               style={{ objectPosition: 'center 20%', filter: 'saturate(0.9) brightness(1.02)' }}

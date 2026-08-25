@@ -23,11 +23,14 @@ Open the URL shown in the terminal (usually `http://localhost:5173`).
 
 ## Build
 
+Chromium is required once for the prerender step:
+
 ```bash
-npm run build
+npx playwright install chromium
+CANONICAL_BASE=https://yevucee.github.io/Walking-with-rasmus SITE_BASE_PATH=/Walking-with-rasmus npm run build
 ```
 
-Static files are written to `dist/`. The build also copies `index.html` to `404.html` for GitHub Pages client-side routing.
+Static files are written to `dist/`. The build prerenders every public route to HTML, injects canonical/Open Graph tags, and writes `sitemap.xml`, `robots.txt`, `llms.txt`, and `.nojekyll`.
 
 Preview the production bundle:
 
@@ -39,11 +42,11 @@ npm run preview
 
 Live site: **https://yevucee.github.io/Walking-with-rasmus/**
 
-Production builds use `base: /Walking-with-rasmus/` so assets and client-side routes resolve correctly on GitHub Pages.
+Production builds use `SITE_BASE_PATH=/Walking-with-rasmus` so assets and client-side routes resolve correctly on GitHub Pages. Canonical URLs currently use the same GitHub Pages origin until a custom domain exists.
 
 **One-time setup:** Repo **Settings → Pages → Source: GitHub Actions**
 
-Push to `main` to trigger `.github/workflows/deploy-pages.yml`.
+Push to `main` to trigger `.github/workflows/deploy.yml`.
 
 ## Credits
 
